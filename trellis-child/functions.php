@@ -26,6 +26,6 @@ function mv_trellis_child_set_options() {
   }
   add_action( 'mv_trellis_parent_loaded', 'mv_trellis_child_set_options' );
   
- /* add_filter( 'mv_trellis_enqueue_main_style', '__return_false' );*/
+/* add_filter( 'mv_trellis_enqueue_main_style', '__return_false' );*/
 
  
