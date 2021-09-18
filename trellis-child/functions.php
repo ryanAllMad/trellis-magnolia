@@ -1,6 +1,7 @@
 <?php
 function mv_trellis_child_set_options() {
-    $child_version = '0.0.1';
+    $child_version = '0.0.2';
+
     \Mediavine\Trellis\Options::set_multiple(
         [
             'child_name'    => 'trellis-child',
