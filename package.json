@@ -1,0 +1,15 @@
+{
+  "name": "trellis-magnolia",
+  "packageManager": "yarn@3.2.1",
+  "scripts": {
+    "start-js": "parcel watch assets/src/js/index.js --dist-dir assets/dist/js/main.$(cat theme.version).js --public-url .",
+    "start-css": "parcel watch assets/src/scss/main.scss --dist-dir assets/dist/css/main.$(cat theme.version).css --public-url .",
+    "build": "NODE_ENV=production yarn build-js && yarn build-css",
+    "build-js": "parcel build assets/src/js/index.js --dist-dir assets/dist/js/main.$(cat theme.version).js --no-source-maps",
+    "build-css": "parcel build assets/src/scss/main.scss --dist-dir assets/dist/css/main.$(cat theme.version).css --no-source-maps"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "2.6.0",
+    "parcel": "^2.6.0"
+  }
+}
